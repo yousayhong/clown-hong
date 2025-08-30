@@ -1,6 +1,6 @@
 /* home */
 #home {
-  background-image: url('/clown-artist/images/home_background.png');
+  background-image: url('/clown-hong/images/home_background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +32,7 @@
 
 /* intro */
 #intro {
-  background-image: url('/clown-artist/images/intro_background.png');
+  background-image: url('/clown-hong/images/intro_background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -234,7 +234,7 @@
 
 /* career */
 #career {
-  background-image: url('/clown-artist/images/career_background.png');
+  background-image: url('/clown-hong/images/career_background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -387,7 +387,7 @@
 
 /* award */
 #award {
-  background-image: url('/clown-artist/images/award_background.png');
+  background-image: url('/clown-hong/images/award_background.png');
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -492,7 +492,7 @@
 
 /* contact */
 #contact {
-  background-image: url('/clown-artist/images/contact_background.png');
+  background-image: url('/clown-hong/images/contact_background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
