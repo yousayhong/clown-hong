@@ -1,0 +1,612 @@
+/* home */
+#home {
+  background-image: url('/clown-artist/images/home_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#home > div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 0;
+  top: calc(50% - 40px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#home > div > h1 {
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0 6px 6px var(--color-overlay);
+}
+
+#home > div > h1 > b {
+  color: var(--color-theme);
+}
+
+/* intro */
+#intro {
+  background-image: url('/clown-artist/images/intro_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#intro > div {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#intro > div > img {
+  width: 340px;
+  height: auto;
+  margin: 0 20px 0 0;
+}
+
+#intro > div > div {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0 0 0 20px;
+}
+
+#intro > div > div > h4 {
+  width: 100%;
+  padding: 0 0 20px 0;
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid var(--color-surface);
+  text-align: center;
+}
+
+#intro > div > div > strong {
+  white-space: nowrap;
+}
+
+/* watch */
+#watch {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#watch:fullscreen > div {
+  display: none;
+}
+
+#watch > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: 10;
+}
+
+#watch > div {
+  width: 100%;
+  max-width: 1400px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 100px;
+  right: 50%;
+  transform: translate(50%, 0);
+  z-index: 100;
+}
+
+#watch > div > div {
+  width: 100%;
+  max-width: 200px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 6px 0;
+  border-radius: 4px;
+}
+
+#watch > div > div > svg {
+  width: 32px;
+  height: 32px;
+  margin: 0 8px 0 0;
+  fill: var(--color-secondary);
+}
+
+#watch > div > div > input[type='range'] {
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+#watch > div > div > input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-top: calc((8px - 16px) * 0.5);
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-theme);
+  transition: all 0.12s ease-in-out;
+}
+
+#watch > div > div > input[type='range']::-moz-range-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-theme);
+  transition: all 0.12s ease-in-out;
+}
+
+#watch > div > div > input[type='range']:focus::-webkit-slider-thumb {
+  box-shadow:
+    0 0 0 1px var(--color-secondary),
+    0 0 0 4px rgba(241, 168, 202, 0.2);
+}
+
+#watch > div > div > input[type='range']:focus::-moz-range-thumb {
+  box-shadow:
+    0 0 0 1px var(--color-secondary),
+    0 0 0 4px rgba(241, 168, 202, 0.2);
+}
+
+#watch > div > div > input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 2px;
+  background-color: var(--color-surface);
+  cursor: pointer;
+}
+
+#watch > div > div > input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 2px;
+  background-color: var(--color-surface);
+  cursor: pointer;
+}
+
+#watch > div > ul {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#watch > div > ul > li {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+#watch > div > ul > li > svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-secondary);
+  transition: all 0.2s;
+  margin: 0 4px 0 0;
+}
+
+#watch > div > ul > li > p {
+  white-space: nowrap;
+  opacity: 1;
+}
+
+#watch > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#watch > span > div {
+  width: 100px;
+  height: 100px;
+  margin: calc(50% - 50px) auto;
+  border: 6px solid var(--color-surface);
+  border-top-color: var(--color-secondary);
+  border-radius: 100%;
+  animation: WatchLoading 1.6s ease-in-out infinite;
+}
+
+/* career */
+#career {
+  background-image: url('/clown-artist/images/career_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#career > div {
+  width: 100%;
+  max-width: 1400px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#career > div > div {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 60px 0;
+}
+
+#career > div > div > h4 {
+  width: 100%;
+  max-width: 240px;
+  margin: 0 30px;
+  transition: all 0.12s;
+  text-align: center;
+  cursor: pointer;
+}
+
+#career > div > span {
+  width: 100%;
+  height: 360px;
+}
+
+#career > div > span > div {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  position: relative;
+}
+
+#career > div > span > div > div {
+  width: 100%;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+#career > div > span > div > div > div {
+  transition: transform 0.4s ease-in-out;
+}
+
+#career > div > span > div > div > div > div {
+  width: 100%;
+  display: inline-flex;
+}
+
+#career > div > span > div > div > div > div:first-child {
+  padding: 0 0 20px 0;
+  margin: 0 0 20px 0;
+}
+
+#career > div > span > div > div > div > div > div {
+  flex: 0 0 calc(100% / 1);
+}
+
+#career > div > span > div > button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+#career > div > span > div > button:disabled {
+  cursor: default;
+  z-index: -10;
+  opacity: 0;
+}
+
+#career > div > span > div > button:first-child {
+  left: 0;
+}
+
+#career > div > span > div > button:last-child {
+  right: 0;
+}
+
+#career > div > span > div > button > svg {
+  width: 26px;
+  height: 26px;
+  fill: var(--color-tertiary);
+}
+
+#career > div > span > ol {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+#career > div > span > ol > li {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#career > div > span > span > ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  padding: 0 0 30px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid var(--color-surface);
+}
+
+#career > div > span > span > ul > li {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#career > div > span > span > ul > li > img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+#career > div > span > span > p {
+  width: 100%;
+  text-align: end;
+}
+
+/* award */
+#award {
+  background-image: url('/clown-artist/images/award_background.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+#award > div {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#award > div > h4 {
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+
+#award > div > h4 > b {
+  color: var(--color-theme);
+}
+
+#award > div > div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#award > div > div > ul:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+#award > div > div > ul:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin: 20px 0;
+}
+
+#award > div > div > ul:nth-child(3) {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#award > div > div > ul > li {
+  width: 160px;
+}
+
+#award > div > div > ul > li > img {
+  width: 100%;
+  height: auto;
+}
+
+#award > div > span {
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0;
+  border-top: 1px solid var(--color-surface);
+  border-bottom: 1px solid var(--color-surface);
+}
+
+#award > div > span > ul {
+  width: max-content;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#award > div > span > ul:first-child {
+  margin: 0 0 20px 0;
+  animation: AwardCertificate 80s linear infinite;
+}
+
+#award > div > span > ul:last-child {
+  margin: 20px 0 0 0;
+  animation: AwardCertificateReverse 80s linear infinite;
+}
+
+#award > div > span > ul > li {
+  width: 120px;
+  margin: 0 10px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#award > div > span > ul > li > img {
+  width: 100%;
+  height: auto;
+}
+
+/* contact */
+#contact {
+  background-image: url('/clown-artist/images/contact_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#contact > div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#contact > div > span {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#contact > div > span > a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 20px 0;
+  color: var(--color-secondary);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#contact > div > span > a:hover {
+  color: var(--color-theme);
+}
+
+#contact > div > span > a:hover > svg {
+  fill: var(--color-theme);
+}
+
+#contact > div > span > a > svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-secondary);
+  margin: 0 14px 0 0;
+}
+
+#contact > div > div {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0 0 0;
+}
+
+#contact > div > div > h5 {
+  padding: 0 30px 10px 30px;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid var(--color-surface);
+}
+
+#contact > div > div > div {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+}
+
+#contact > div > div > div > label {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.2s;
+  margin: 0 20px;
+}
+
+#contact > div > div > div > label:hover {
+  color: var(--color-theme);
+}
+
+#contact > div > div > div > label > p {
+  white-space: nowrap;
+  opacity: 1;
+}
+
+#contact > div > div > div > label > img {
+  width: 24px;
+  height: auto;
+  margin: 0 6px 0 0;
+}
+
+@keyframes AwardCertificate {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes AwardCertificateReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes WatchLoading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
