@@ -1,0 +1,313 @@
+@media (max-width: 1080px) {
+  *,
+  :after,
+  :before {
+    line-height: 1.3;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  h3 {
+    font-size: 3.4rem;
+  }
+
+  h4 {
+    font-size: 2.6rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  strong {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  address {
+    font-size: 1.4rem;
+  }
+
+  header > div > ul > li {
+    margin: 0 16px;
+  }
+
+  header > div > div:first-child {
+    display: none;
+  }
+
+  header > div > div > img {
+    height: 28px;
+    margin: 0 0 0 10px;
+  }
+
+  footer > div > ul > li > img {
+    width: 34px;
+  }
+
+  nav > div > div > svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  #intro > div > div {
+    margin: 0;
+  }
+
+  #intro > div > div > h4 {
+    padding: 0 0 10px 0;
+    margin: 0 0 20px 0;
+  }
+
+  #intro > div > img {
+    display: none;
+  }
+
+  #watch > video {
+    object-fit: contain;
+  }
+
+  #watch > div > div {
+    max-width: 170px;
+  }
+
+  #watch > div > div > svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  #watch > div > div > input[type='range'] {
+    height: 16px;
+  }
+
+  #watch > div > ul > li > svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  #career > div > div {
+    margin: 0 0 40px 0;
+  }
+
+  #career > div > div > h4 {
+    margin: 0 20px;
+  }
+
+  #career > div > ol {
+    height: 100%;
+    min-height: 50vh;
+    max-height: 50vh;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    overflow: auto;
+  }
+
+  #career > div > ol::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  #career > div > ol::-webkit-scrollbar-thumb {
+    background: var(--color-theme);
+    border-radius: 4px;
+  }
+
+  #career > div > ol::-webkit-scrollbar-track {
+    background: var(--color-surface);
+  }
+
+  #career > div > ol::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  #career > div > span {
+    height: 100%;
+    min-height: 50vh;
+    max-height: 50vh;
+  }
+
+  #career > div > span > ul {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  #award > div > h4 {
+    margin: 0 0 40px 0;
+  }
+
+  #award > div > div > ul > li {
+    width: 100px;
+  }
+
+  #award > div > div > ul:nth-child(1) {
+    gap: 20px;
+  }
+
+  #award > div > div > ul:nth-child(2) {
+    gap: 20px;
+  }
+
+  #award > div > div > ul:nth-child(3) {
+    gap: 20px;
+  }
+
+  #contact > div > span > a {
+    margin: 0 0 10px 0;
+  }
+
+  #contact > div > span > a > svg {
+    width: 38px;
+    height: 38px;
+    margin: 0 12px 0 0;
+  }
+
+  #contact > div > div {
+    margin: 40px 0 0 0;
+  }
+}
+
+@media (max-width: 720px) {
+  *,
+  :after,
+  :before {
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+
+  strong {
+    font-size: 0.88rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  address {
+    font-size: 1.16rem;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  #contact > div > span > a > svg {
+    width: 26px;
+    height: 26px;
+    margin: 0 10px 0 0;
+  }
+
+  nav > div > div > svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  #watch > div {
+    top: 70px;
+  }
+
+  #career > div {
+    padding: 0 20px;
+  }
+
+  #career > div > div {
+    margin: 0 0 30px 0;
+  }
+
+  #career > div > ol {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  #career > div > ol > li {
+    width: calc(100% - 80px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  #career > div > ol > li > div {
+    width: 100%;
+    display: inline-flex;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  #career > div > span > span > ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 0 20px 0;
+    margin: 0 0 10px 0;
+  }
+
+  #award > div {
+    padding: 0 20px;
+  }
+
+  #award > div > h4 {
+    margin: 0 0 30px 0;
+  }
+
+  #award > div > div {
+    height: 100%;
+    max-height: calc(100vh - 270px);
+    overflow: scroll;
+  }
+
+  #award > div > div > ul:nth-child(1) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #award > div > div > ul:nth-child(2) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #award > div > div > ul:nth-child(3) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #award > div > div > ul > li {
+    width: 100%;
+  }
+
+  #contact > div > div > div {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  #contact > div > div > div {
+    padding: 0 10px;
+  }
+
+  #contact > div > div > div > label {
+    margin: 10px 0;
+  }
+}
