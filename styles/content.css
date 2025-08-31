@@ -63,7 +63,7 @@ section {
   --color-dark: #000000;
   --color-static: rgba(255, 255, 255, 0.1);
   --color-surface: rgba(255, 255, 255, 0.3);
-  --color-overlay: rgba(0, 0, 0, 0.72);
+  --color-overlay: rgba(0, 0, 0, 0.82);
   --color-dusky: rgba(0, 0, 0, 0.9);
 }
 
